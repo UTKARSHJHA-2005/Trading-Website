@@ -36,6 +36,7 @@ section{
     padding: 3rem 2rem;
     margin: 0 auto;
     max-width:  1200px;
+    position: sticky;
 }
 
 .heading{
@@ -119,8 +120,13 @@ section{
     }
 }
 
-@media(max-width:991px){
-    html{
-        font-size: 55%;
-    }
+.menu{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 50px;
+    font-size: large;
+}
+
+.menu:hover{
+    color: #973131;
 }
