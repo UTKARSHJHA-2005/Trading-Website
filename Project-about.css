@@ -133,57 +133,53 @@ section {
     color: #973131;
 }
 
-.home .flex {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+.topic{
+    font-size: 50px;
+    color: cornsilk;
+    text-align: center;
 }
 
-.home.flex.image {
-    flex: 1 1 30rem;
-    position: relative;
+.info p{
+    color: white;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.home .flex .image img {
-    width: 40%;
-    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-    height: 100%;
-    border: 5px solid #96ceb4;
-    display: inline;
-    margin: 40px;
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,35rem);
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
 }
 
-.cont h3{
-    color: wheat;
-    font-size: 60px;
+.services .box-container .box1{
+    text-align: center;
+    padding: 2.5rem 2rem;
+    background-color: var(--bg-color);
+    margin-bottom: 1rem;
 }
 
-.btn1{
-    display: inline-block;
-    margin-top: 1rem;
-    cursor: pointer;
-    padding: 1rem 3rem;
-    font-size: 1.8rem;
-    background: var(--gradient);
-    color: var(--white);
-    border-radius: 5rem;
-    transition: 0.2s linear;
+.services .box-container .box1:hover{
+    background-color: lightgray;
 }
 
-.btn1:hover {
-    background: linear-gradient(#12c2e9, #c471ed, #f64f59);
+.services .box-container .box1 i{
+    font-size: 3.5rem;
+    background-clip: text;
+    color: white;
 }
 
-.cont p{
-    color: whitesmoke;
-    font-size: 15px;
+.services .box-container .box1 h3{
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    color: white;
 }
 
-.cont a{
-    margin-left: 480px;
-}
-
-.home .flex .cont {
-    flex: 1 1 50rem;
+.services .box-container .box1 p{
+    line-height: 1.8;
+    font-size: 1.4rem;
+    color: white;
+    padding: 0.5rem 0;
 }
