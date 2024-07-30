@@ -1,3 +1,7 @@
+body{
+    background: radial-gradient(#000000,#434343);
+}
+
 .block2 {
     width: 40%;
     align-items: center;
@@ -6,7 +10,7 @@
 }
 
 .outer-container {
-    background-color: #87CEEB;
+    background-color: #4535C1;
     width: 500px;
     height: 830px;
     margin-top: 40px;
@@ -16,6 +20,7 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
+    border-radius: 40px;
 }
 
 .outer-container h2 {
@@ -29,6 +34,7 @@
     border-radius: 8px;
     max-width: 400px;
     width: 100%;
+    border-radius: 40px;
     text-align: center;
     margin-bottom: 200px;
     margin-top: 170px;
@@ -55,7 +61,7 @@ input[type="password"] {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: red;
     /* Green */
     color: white;
     padding: 12px 20px;
@@ -72,7 +78,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: lightcoral;
 }
 
 .form-group label{
