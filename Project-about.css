@@ -147,6 +147,18 @@ section {
     font-size: large;
 }
 
+@media (max-width: 768px) {
+  .header .flex {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .menu {
+      padding: 15px;
+      font-size: 1.6rem;
+  }
+}
+
 .menu:hover {
     color: #973131;
 }
@@ -195,7 +207,6 @@ body {
   box-shadow: 0 0 20px rgba(0, 170, 255, 0.4);
 }
 
-/* Team Section */
 .team-section {
   padding: 60px 30px;
   background: #0d0d0d;

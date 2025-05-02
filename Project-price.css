@@ -11,14 +11,12 @@ body {
     color: #fff;
 }
 
-/* Container */
 .container {
     max-width: 1200px;
     margin: auto;
     padding: 40px 20px;
 }
 
-/* Toggle Switch Section */
 .toggle-container {
     display: flex;
     align-items: center;
@@ -71,7 +69,6 @@ input:checked + .toggle-slider::before {
     transform: translateX(30px);
 }
 
-/* Plan Groups */
 .plans {
     display: flex;
     flex-direction: column;
@@ -87,7 +84,6 @@ input:checked + .toggle-slider::before {
     margin-bottom: 20px;
 }
 
-/* Plan Cards */
 .plan-card {
     background-color: #1e1e1e;
     border-radius: 15px;
@@ -137,12 +133,10 @@ input:checked + .toggle-slider::before {
     background-color: #00c3a0;
 }
 
-/* Visibility toggle */
 #annualPlans {
     display: none;
 }
 
-/* Responsive */
 @media (max-width: 992px) {
     .plan-group {
         flex-direction: column;
