@@ -178,45 +178,71 @@ section {
   font-size: 60px;
 }
 
-
+.btn-1{
+  background: var(--gradient);
+  color: var(--white);
+  border-radius: 5rem;
+  transition: 0.2s linear;
+  float: right;
+  cursor: pointer;
+  width: 100px;
+  padding: 6px;
+  text-align: center;
+  height: 40px;
+  margin-top: 50px;
+}
 
 .btn1 {
   display: inline-block;
-  margin-top: 1rem;
-  cursor: pointer;
-  padding: 1rem 3rem;
+  padding: 1rem 2.5rem;
   font-size: 1.8rem;
   background: var(--gradient);
   color: var(--white);
   border-radius: 5rem;
   transition: 0.2s linear;
-  text-align: center; /* Ensure text is centered inside the button */
+  margin-top: 1rem;
+  border: none;
+  text-align: center;
+  margin-left: 0;
+  /* Prevent it from stretching */
+  width: auto;
 }
 
-/* Tablet */
 @media (max-width: 768px) {
-  .btn1 {
-    padding: 0.8rem 2rem;
-    font-size: 1.4rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; /* Center button horizontally */
+  .flex {
+    flex-direction: column;
+    padding: 2rem 3%;
+  }
+
+  .cont {
+    max-width: 100%;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
   }
 }
 
-/* Mobile */
+/* Mobile devices */
 @media (max-width: 480px) {
-  .btn1 {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.2rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; /* Center button horizontally */
+  .home {
+    padding: 1.5rem 3%;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
   }
 }
 
-.btn1:hover {
+.btn-1:hover {
   background: linear-gradient(#12c2e9, #c471ed, #f64f59);
 }
 
@@ -257,6 +283,20 @@ section {
 .carousel-item img {
   width: 100%;
   display: block;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    max-width: 100%;
+    border-radius: 6px;
+    border-width: 1px;
+  }
 }
 
 .services {
@@ -462,7 +502,7 @@ section {
   font-size: 15px;
 }
 
-.tradingview-wrapper {
+/* .tradingview-wrapper {
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -487,7 +527,7 @@ section {
     height: auto;
     margin-left: 0;
   }
-}
+} */
 
 .footer-center p a {
   color: #4f46e5;
