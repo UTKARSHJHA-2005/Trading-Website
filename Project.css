@@ -187,25 +187,36 @@ section {
   cursor: pointer;
   width: 100px;
   padding: 6px;
-  text-align: center;
-  height: 40px;
+  padding-top: 12px;
+  height: 50px;
   margin-top: 50px;
 }
 
-.btn1 {
-  display: inline-block;
-  padding: 1rem 2.5rem;
-  font-size: 1.8rem;
-  background: var(--gradient);
-  color: var(--white);
-  border-radius: 5rem;
-  transition: 0.2s linear;
-  margin-top: 1rem;
-  border: none;
-  text-align: center;
-  margin-left: 0;
-  /* Prevent it from stretching */
-  width: auto;
+.tradingview-wrapper-1 {
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.tradingview-widget-container-1 {
+  min-height: 60vh;
+}
+
+@media (max-width: 768px) {
+  .tradingview-widget-container-1 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .tradingview-widget-container-1 {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -501,33 +512,6 @@ section {
   font-weight: 400;
   font-size: 15px;
 }
-
-/* .tradingview-wrapper {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.tradingview-widget-container {
-  width: 100%;
-  height: 100%;
-}
-
-@media (max-width: 768px) {
-  .tradingview-widget-container {
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media (max-width: 500px) {
-  .tradingview-widget-container {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-  }
-} */
 
 .footer-center p a {
   color: #4f46e5;
